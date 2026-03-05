@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(ApiEndpoints.ProductAdmin.BASE_PRODUCT_ADMIN)
 @RequiredArgsConstructor
-@Tag(name = "Product Admin API", description = "Operations related to products")
+@Tag(name = "Product Admin API", description = "This is related to products")
 @Slf4j
 public class ProductAdminController {
 

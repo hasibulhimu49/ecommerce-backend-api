@@ -20,16 +20,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(ApiEndpoints.CategoryAdmin.BASE_CATEGORY_ADMIN)
 @RequiredArgsConstructor
-@Tag(name = "Category API", description = "Operation related to Category")
+@Tag(name = "Category API", description = "This is related to Category")
 public class CategoryAdminController {
 
 
     private final CategoryService service;
 
 
-    @Operation(summary = "create a new category", description = "create a new description in the system")
+    @Operation(summary = "Create a new category", description = "Create a new description in the system")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "category create successfully"),
+            @ApiResponse(responseCode = "201", description = "Category create successfully"),
             @ApiResponse(responseCode = "400",description = "Invalid input data")
     })
     @PostMapping

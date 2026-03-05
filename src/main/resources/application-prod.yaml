@@ -6,6 +6,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/e_commerce
 
 
+  flyway:
+    enabled: true
+
     jpa:
       show-sql: true
       hibernate:

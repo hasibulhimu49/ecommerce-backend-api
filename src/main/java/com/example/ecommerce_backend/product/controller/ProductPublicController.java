@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(ApiEndpoints.ProductPublic.BASE_PRODUCT_PUBLIC)
 @RequiredArgsConstructor
-@Tag(name = "Product User API",description = "Operations rel;ated to product")
+@Tag(name = "Product User API",description = "This is related to product")
 public class ProductPublicController {
 
     private final ProductService service;
 
-    @Operation(summary = "get product by id")
+    @Operation(summary = "Get product by id")
     @GetMapping("/{id}")
     public ProductResponseDto getProductById(@PathVariable Long id)
     {

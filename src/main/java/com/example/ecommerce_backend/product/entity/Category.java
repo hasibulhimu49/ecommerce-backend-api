@@ -22,7 +22,7 @@ public class Category extends BaseEntity implements Auditable {
     @Column(nullable = false)
     private String code;
 
-    @Column
+    @Column(name = "is_active")
     private Boolean isActive;
 
 

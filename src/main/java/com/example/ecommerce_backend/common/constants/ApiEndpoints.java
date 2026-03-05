@@ -32,4 +32,11 @@ public class ApiEndpoints {
     public static class CategoryPublic{
         public static final String BASE_CATEGORY_PUBLIC=API_VERSION + "/categories";
     }
+
+
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class InventoryAdmin{
+        public static final String BASE_INVENTORY_ADMIN=API_VERSION + BASE_ADMIN + "/inventory";
+    }
 }

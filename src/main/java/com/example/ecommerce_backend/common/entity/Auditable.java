@@ -1,6 +1,5 @@
 package com.example.ecommerce_backend.common.entity;
 
-import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDateTime;
 
@@ -17,7 +16,5 @@ public interface Auditable {
 
     Long getUpdatedBy();
     void setUpdatedBy(Long updatedBy);
-
-
 
 }

@@ -22,16 +22,17 @@ public class Product extends BaseEntity implements Auditable {
     private String description;
 
     @Column(nullable = false,length = 50)
-    private String sku;
+    private String sku; // Stock Keeping Unit
 
     @Column(nullable = false)
     private Double price;
 
-    @Column(length = 250)
+    @Column(name = "image_url")
     private String imageUrl;
 
-    @Column(nullable = false)
+    @Column(name = "is_active")
     private Boolean isActive;
+
 
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
     @JoinColumn(name = "category_id",nullable = false)
