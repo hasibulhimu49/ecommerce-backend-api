@@ -39,4 +39,18 @@ public class ApiEndpoints {
     public static class InventoryAdmin{
         public static final String BASE_INVENTORY_ADMIN=API_VERSION + BASE_ADMIN + "/inventory";
     }
+
+
+
+
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class Cart {
+        public static final String BASE_CART = API_VERSION + "/cart";
+    }
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static class CartItem {
+        public static final String BASE_CART_ITEMS = API_VERSION + "/cart/items";
+    }
 }
